@@ -3,23 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>检测设备类型</title>
-	<script type="text/javascript" src="javascripts/device.min.js"></script>
+	<script type="text/javascript" src="device.min.js"></script>
 	<meta  name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
 </head>
 <body>
 	<h1>DEVICE.JS</h1>
 	<script type="text/javascript">
-		var whref = window.location.href  ;
 		if(window.device){
 			if(window.device.IsPC){
-				alert(123);
-				whref = 'https://www.baidu.com'; 
+				alert('您使用的是PC訪問地址,将跳转到百度.');
+				window.location.href = 'https://www.baidu.com'; 
 			}else{
-				alert(456);
-				whref = 'http://www.hao123.com'; 
+				var type = 'IOS';
+				if(window.device.IsAndroid) type = 'Android';
+				alert('您使用的是'+type+'訪問地址,将跳转到hao123.com'); // 设备类型
+				window.location.href = 'http://www.hao123.com'; 
 			}
 		}
-
 	</script>
 </body>
 </html>
