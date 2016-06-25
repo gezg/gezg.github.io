@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>检测设备类型</title>
+	<script type="text/javascript" src="device.js"></script>
+	<meta  name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+	<h1>DEVICE.JS</h1>
+	<script type="text/javascript">
+		var whref = window.location.href  ;
+		if(window.device){
+			if(window.device.IsPC){
+				alert(123);
+				whref = 'https://www.baidu.com'; 
+			}else{
+				alert(456);
+				whref = 'http://www.hao123.com'; 
+			}
+		}
+
+	</script>
+</body>
+</html>
