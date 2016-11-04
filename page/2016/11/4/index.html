@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../../../css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="###">戈志刚的博客</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="###">日志</a></li>
+                    <li class="dropdown">
+                        <a href="###" class="dropdown-toggle" data-toggle="dropdown">历史 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">2013</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">2014</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">2015</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">2016</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">留言</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <div class="row">
+            <main class="col-md-9">
+                <article id="70" class="post">
+                    <header class="post-head">
+                        <h1 class="post-title">Laravel 5.3 正式发布</h1>
+                        <section class="post-meta">
+                            <span class="author">作者：<a href="/author/wangsai/">戈志刚</a></span> •
+                            <time class="post-date" datetime="2016年8月24日星期三凌晨2点04分" title="2016年8月24日星期三凌晨2点04分">2016年11月4日</time>
+                        </section>
+                    </header>
+                    <section class="featured-media">
+                        <img src="http://image.golaravel.com/9/a9/c367f99a8366ca86f7b889da25022.png" alt="Laravel 5.3 正式发布">
+                    </section>
+                    <section class="post-content">
+                        <p>Laravel 项目组自豪地宣布 Laravel 5.3 <a href="https://laravel.com/docs/5.3">正式发布了</a> ！5.3 版本中的新增特性主要集中在提升开发速度，通过增强常见任务的开箱即用功能提升开发效率。</p>
+                        <p>此版本是常规发布版本，提供六个月的 bug 修复补丁和一年的安全补丁。当前，<a href="https://laravel-news.com/2015/06/laravel-5-1-released/">Laravel 5.1</a> 是最新的 LTS（长期支持） 版本，提供两年的 bug 修复补丁和三年的安全补丁。</p>
+                        <p>下面对 Laravel 5.3 版本中的亮点逐一介绍：</p>
+                        <h2 id="">网站换了新首页</h2>
+                        <p><img src="http://image.golaravel.com/3/8e/add58e0621d57fedeb4dba9e4a089.png" alt="laravel-homepage"></p>
+                        <p><a href="https://laravel.com">网站首页</a> 又改版了，对 Laravel 中新增加的 package 重点推介，还增加了到 Laracsts、Laravel News 和 Statamic 相关网站的链接。</p>
+                        <h2 id="laravelscout">Laravel Scout</h2>
+                        <p>Laravel Scout 是为 Eloquent 开发的全文搜索引擎。Scout 的工作原理是为数据模型（model）增加一个 <code>Searchable</code> trait ，将数据同步到指定的索引中，然后就可以方便的调用搜索功能了：</p>
+                        <pre><code class="hljs php">Post::search(<span class="hljs-string">'Alice'</span>)-&gt;get();
+</code></pre>
+                        <h2 id="laravelpassport">Laravel Passport</h2>
+                        <p><a href="https://laravel-news.com/2016/08/laravel-passport/">Laravel Passport</a> 封装了部署 OAuth2 服务器的一切元素。这个包是可选的，它提供了完整的 scope 设置，用来生成、撤销 token 的 Vue.js 组件，还有很多不一一提及。</p>
+                        <h2 id="laravelmailablenotifications">Laravel Mailable 和 Notifications</h2>
+                        <p><a href="https://laravel-news.com/2016/08/laravel-mailable-the-new-and-improved-way-to-send-email-in-laravel/">Laravel Mailable</a> 是一个新的、基于类（class）的邮件发送组件。</p>
+                        <p><a href="https://laravel-news.com/2016/08/laravel-notifications-easily-send-quick-updates-through-slack-sms-email-and-more/">Laravel Notifications</a> 能够让你通过第三方服务，例如 Slack、短信、邮件等渠道发送通知。</p>
+                        <h2 id="laravelecho">Laravel Echo</h2>
+                        <p>Laravel Echo 是对现有的事件广播系统的增强，能够与 web socket 更容易地协同工作。使用 Echo 时，后台系统要包含 Laravel core，并且还需要安装一个 NPM 包。</p>
+                        <h2 id="">迁移</h2>
+                        <p>迁移系统新增了一个特性，能够帮你回滚单个迁移操作。</p>
+                        <pre><code class="hljs sql">php artisan migrate:<span class="hljs-keyword">rollback</span> <span class="hljs-comment">--step=1</span>
+</code></pre>
+                        <p>上述参数以前不存在，并且以前只能回滚一个批量操作，并且一个批量操作包含多个步骤（step）。</p>
+                        <h2 id="">简化分页</h2>
+                        <p>Laravel 提供了两种样式的分页，一种是展示一系列页码列表，另一种是只展示前一页和后一页的链接。</p>
+                        <p>从 Laravel 5.3 版本开始，后一种简化的分页可以直接在视图文件中调用，这将比以前更加简化对分页的 HTML 结构和样式的定制工作。</p>
+                        <h2 id="bladedloop">Blade 模板引擎新增的 <code>$loop</code> 变量</h2>
+                        <p>Laravel Blade 模板引擎新增了一个 变量，这能够让你更好地控制循环操作。现在，一下属性都可以使用了：</p>
+                        <ul>
+                            <li>index – 循环次数</li>
+                            <li>remaining – 剩余循环数</li>
+                            <li>count – 总循环数</li>
+                            <li>first – 是否是第一次循环</li>
+                            <li>last – 是否是最后一次循环</li>
+                            <li>depth – 循环深度</li>
+                            <li>parent – 在嵌套循环中通过 parent 调用父循环中的数据</li>
+                        </ul>
+                        <p>推荐读一读 <a href="https://mattstauffer.co/blog/the-new-loop-variable-in-laravel-5-3">Matt Stauffer 的这篇博文</a> 。</p>
+                        <h2 id="">目录结构的变化</h2>
+                        <p>“app” 目录得到了简化，所有空目录，例如 Events、Jobs、Listeners 和 Policies 均已被删除。这次的变化保持了向后兼容，将来你再执行任何 Artisan “make:” 命令式，相应的目录会被自动创建。</p>
+                        <h2 id="querybuilder">查询构造器（Query Builder）</h2>
+                        <p>查询构造器以前返回的是一个数组，现在默认返回的是一个 Colection。这个改变是一个潜在的不兼容变化，但是这将统一查询构造器和 Eloquent 的返回值类型。</p>
+                        <h2 id="">缓存助手</h2>
+                        <p>Laravel 5.3 包含了一个全新的全局助手函数 <code>cache()</code>，这个函数能够让你更方便地获取缓存系统的实例对象。推荐读一读 <a href="https://mattstauffer.co/blog/the-new-cache-global-helper-in-laravel-5-3">Matt 写的这篇博文</a> 。</p>
+                        <h2 id="">文档的变化</h2>
+                        <p>此次版本我们对文档进行了大量修正。现在在章节安排能够更好地覆盖从安装 Laravel 到使用 Laravel 官方包的所有方面。并且在某些技术点我们还增加了到 Laracasts 免费视频教程的链接。这将同时满足喜爱通过视频/音频教程学习以及喜欢通过文字学习的同学。</p>
+                        <h2 id="">升级指导</h2>
+                        <p>官方文档已经给出了<a href="https://laravel.com/docs/master/upgrade">升级指导</a> ，这份文档包含了所有关于升级到 Laravel 5.3 的相关知识。估计整个升级过程可能需要两到三个小时。</p>
+                        <hr>
+                        <p>原文出处：<a href="https://laravel-news.com/2016/08/laravel-5-3-is-now-released/">https://laravel-news.com/2016/08/laravel-5-3-is-now-released/</a></p>
+                    </section>
+                    <footer class="post-footer clearfix">
+                        <div class="pull-left tag-list">
+                            <i class="fa fa-folder-open-o"></i>
+                        </div>
+                        <div class="pull-right share">
+                            <div class="bdsharebuttonbox share-icons">
+                                <a href="#" class="bds_more" data-cmd="more"></a>
+                                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                                <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                            </div>
+                        </div>
+                    </footer>
+                </article>
+                <div class="about-author clearfix">
+    <a href="/author/wangsai/"><img src="http://image.golaravel.com/6/d4/82b9646073bef7a7d67c6cd1db987.png" alt="王赛" class="avatar pull-left"></a>
+    
+    <div class="details">
+        <div class="author">
+            关于作者 <a href="/author/">戈志刚</a>
+        </div>
+        <div class="meta-info">
+            <span class="loaction"><i class="fa fa-home"></i>长春</span>
+            <span class="website"><i class="fa fa-globe"></i><a href="http://gezg.github.io" targer="_blank">个人网站/博客</a></span>
+        </div>
+    </div>
+</div>
+<div class="prev-next-wrap clearfix">
+
+    <a class="btn btn-info" href="/post/laracon-laravel-5-3-recap/"><i class="glyphicon glyphicon-chevron-left"></i> Laracon 开发者大会快报：听 Taylor Otwell  讲解 Laravel 5.3 的新特性</a>
+    &nbsp;
+
+</div>
+            </main>
+            <aside class="col-md-3 sidebar">
+                <!-- start widget -->
+                <!-- end widget -->
+                <!-- start tag cloud widget -->
+                <div class="widget">
+                    <h4 class="title">社区</h4>
+                    <div class="content community">
+                        <p>QQ号码：81663661</p>
+                        <p>
+                            <a href="#" title="戈志刚" target="_blank">
+                                <i class="glyphicon glyphicon-new-window"></i> 问答社区
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <!-- end tag cloud widget -->
+                <!-- start widget -->
+                <div class="widget">
+                    <h4 class="title">下载</h4>
+                    <div class="content download">
+                        <a href="/download/" class="btn btn-info btn-block">资源下载</a>
+                    </div>
+                </div>
+                <!-- end widget -->
+                <!-- start tag cloud widget -->
+                <div class="widget">
+                    <h4 class="title">标签云</h4>
+                    <div class="content tag-cloud">
+                        <a href="/tag/laravel-5-2/">Laravel 5.2</a>
+                        <a href="/tag/spark/">Spark</a>
+                        <a href="/tag/jing-xiang/">镜像</a>
+                        <a href="/tag/xin-ban-ben-fa-bu/">新版本发布</a>
+                        <a href="/tag/lts/">LTS</a>
+                        <a href="/tag/wei-kuang-jia/">微框架</a>
+                        <a href="/tag/lumen/">Lumen</a>
+                        <a href="/tag/ming-ming-kong-jian/">命名空间</a>
+                        <a href="/tag/laravel4/">Laravel4</a>
+                        <a href="/tag/whoops/">Whoops</a>
+                        <a href="/tag/event/">Event</a>
+                        <a href="/tag/sheng-ji/">升级</a>
+                        <a href="/tag/laravle5/">laravle5</a>
+                        <a href="/tag/error-page/">错误页</a>
+                        <a href="/tag/laravel-5/">Laravel 5</a>
+                        <a href="/tag/artisan/">Artisan</a>
+                        <a href="/tag/laravel-5-1/">Laravel 5.1</a>
+                        <a href="/tag/lravel/">Lravel</a>
+                        <a href="/tag-cloud/">...</a>
+                    </div>
+                </div>
+                <!-- end tag cloud widget -->
+                <!-- start widget -->
+                <!-- end widget -->
+                <!-- start widget -->
+                <!-- end widget -->
+            </aside>
+        </div>
+        <script src="../../../../js/jquery.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span>Copyright © <a href="###">github 博客</a></span> |
+                    <span>戈志刚</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
