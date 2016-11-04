@@ -591,3 +591,12 @@ html,body{
     display: block;
   }
 }
+/**
+ * 多说评论样式
+ */
+#ds-thread{
+    background-color: #fff;
+    padding: 1.5em;
+    padding-bottom: 0;
+    margin-bottom: 1.5em;
+}
